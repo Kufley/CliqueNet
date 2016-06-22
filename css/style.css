@@ -1,0 +1,83 @@
+@font-face {font-family: "SF"; src: url("../fonts/SF-UI-Text-Regular.ttf") format("truetype")}
+body{color:#fff; background-color: #41474C; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif}
+h1{font-size: 40px; font-family: 'Dosis';font-weight: 600}
+h3{font-size: 20px; font-family: 'Dosis';font-weight: 500;color:  #000; margin-top: 0}
+h4{font-size: 14px; font-family: 'Dosis';font-weight: 600; line-height: 1.38}
+a:focus{outline-style: none}
+
+
+.fixed{position: fixed; width: 100%; top:0; z-index: 99; }
+.display-flex{display: flex;align-items: center; flex-wrap: wrap}
+.menu-wrap{height: 78px;background-color: #41474C}
+
+.navbar-header{float: none}
+.navbar-brand{height: auto;padding: 20px 15px 33px}
+.nav>li>a{color:#fff;padding: 25px 21px; font-size: 20px; font-family: 'Exo 2'; font-weight: 500}
+.nav>li>a:focus, .nav>li>a:hover {background-color: #099771}
+.nav>li>a.active{background-color: #099771}
+.navbar-collapse{background-color: #41474C; position: fixed; z-index: 99; width: 100%; padding-left: 40px; /*padding-top: 5px*/}
+
+.logo-text{margin: 43px auto 15px; text-align: center}
+
+.container.container-apps{max-width: 420px; font-family: "SF"; font-size: 13px; line-height: 1.31;}
+.container.container-padding0{padding: 0}
+.container.container-features{max-width: 865px; padding: 46px 0 73px}
+.container.container-slider{padding: 47px 15px 147px}
+.apps{background:url("../images/bgrd_1.png") #fff center no-repeat;padding: 28px 0 184px; color: #000; background-size: cover}
+.apps-img{margin-top: 41px} .apps-img img{margin-right: 10px; width: 160px; height: 53px}
+
+.about{background:url("../images/bgrd_2.png") #fff center no-repeat;  background-size: cover; padding: 52px 0 50px}
+.deals{background:url("../images/bgrd_2.png") #fff center no-repeat;  background-size: cover; padding: 46px 0 63px}
+.about h1{margin: 0 auto 39px}
+.about p{font-size: 22px; font-family: 'Dosis'; line-height: 1.22; font-weight: 400}
+
+.features{background:url("../images/bgrd_3.png") left no-repeat}
+.features h1{margin: 0 auto 36px}
+.media-list{display: flex; flex-wrap: wrap; justify-content: space-between}
+.media-list .media{width: 370px;margin-top: 40px;    opacity: 0;}
+.media-heading{margin-bottom: 24px}
+.media-body{text-align: right; border-right: 1px solid #D1D3D4;font-family: "SF"; font-size: 12px; padding: 0 20px 32px;line-height: 1.2}
+.media-right{padding-left: 19px;}
+.media-object.img-circle{max-height: 57px; max-width: 57px;min-height: 57px;min-width: 57px}
+
+.carousel.slide{background:url("../images/bgrd_4.png")  #099771 right no-repeat}
+.carousel.slide h1{margin: 0 auto 74px}
+.carousel-inner>.item>img{margin: 0 auto}
+.carousel-indicators {position: relative;bottom: -81px}
+.carousel-indicators li {width: 12px;height: 12px;    background-color: rgba(236, 236, 236, 0.5); border: 0}
+.carousel-indicators li.active {margin: 1px}
+
+.deals h1, .careers h1{margin: 0 auto 12px}
+.deals, .careers{font-size: 20px; font-family:'Roboto'; font-weight: 300; line-height: 1.2499999}
+.careers{background-color: #4AB769;padding: 50px 0 72px}
+
+footer{padding: 30px 0 35px}
+.copiright{width: 32.9999%; font-size: 16px; font-family: 'Roboto'; font-weight: 400;    margin-top: 11px;}
+.social-icon img{margin: 0 29px}
+.up{width: 40px; height: 40px; background-color: #73ea95; color: #fff; position: fixed; left: 15px; bottom: 100px; display: none; align-items: center; justify-content: center;border-radius: 50%}
+.up img{width: 28px;}
+@media (max-width: 992px){
+    .nav>li>a {padding: 29px 25px;}
+    .social-icon, .copiright{width: 100%; text-align: center}
+    .features{background:#41474C}
+    .carousel.slide{background:#099771}
+    .copiright{margin-bottom: 30px}
+    .media-list .media{padding: 0 15px; width: 100%}
+    .container.container-padding0{padding-right: 15px; padding-left: 15px}
+}
+
+@media (max-width: 768px){
+    .navbar-toggle .icon-bar {background-color: #fff}
+    .social-icon img{margin: 0 15px}
+    .apps-img img{margin-bottom: 20px}
+    .apps {padding: 60px 0 100px}
+    .navbar-nav {margin: 0}
+    .nav>li>a{text-align: center}
+    .media-list .media{opacity: 1;display: flex; flex-wrap: wrap-reverse; justify-content: center; padding: 0 15px}
+    .padding-0, .navbar-collapse{padding: 0}
+    .logo-text{display: none}
+    /*.menu-wrap {height: auto}*/
+    .media-body, .media-right{display: inline}
+    .media-right{padding-left: 0; padding-bottom: 15px; margin-bottom: 15px;border-bottom: 1px solid #D1D3D4;}
+    .media-body{border-right: 0;  text-align: center}
+}
